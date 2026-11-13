@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>资金托管与平台保障 · Eibee 资源中心</title>
+<style>
+:root{--ink:#0f0f10;--ink-2:#1a1a1c;--ink-3:#26262a;--paper:#fafaf9;--paper-2:#f2f1ef;--white:#ffffff;--acc:#B689FF;--acc-dim:rgba(182,137,255,.14);--acc-soft:#F3E1FF;--acc-deep:#6b3fa0;--grey:#8a8d8a;--grey-lt:#d4d3d1;--grey-md:rgba(26,28,27,.55);--ember:#d14424;--title:'Alibaba PuHuiTi Medium','Alibaba PuHuiTi 3.0 65 Medium','PingFang SC','Microsoft YaHei',sans-serif;--mono:'Alibaba PuHuiTi','Alibaba PuHuiTi 3.0 55 Regular','PingFang SC','Microsoft YaHei',sans-serif;--sans:'Alibaba PuHuiTi','Alibaba PuHuiTi 3.0 55 Regular','PingFang SC','Microsoft YaHei',sans-serif;--sidebar-w:280px}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}h1,h2,h3,h4,h5,h6,.sidebar-logo,.sidebar-group-title,.toc-title{font-family:var(--title)}::selection{background:var(--acc);color:var(--ink)}.page-wrap{display:flex;min-height:100vh}.sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--white);border-right:1px solid var(--grey-lt);padding:36px 0;position:fixed;top:0;left:0;bottom:0;overflow-y:auto;z-index:100}.sidebar-inner{padding:0 24px}.sidebar-logo{display:flex;align-items:center;gap:10px;font-family:var(--title);font-size:20px;font-weight:700;letter-spacing:.06em;color:var(--ink);text-decoration:none;margin-bottom:36px}.sidebar-group{margin-bottom:28px}.sidebar-group-title{font-family:var(--title);font-size:12px;letter-spacing:.18em;color:var(--grey);text-transform:uppercase;padding:0 12px;margin-bottom:8px}.sidebar-item{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:8px;font-size:16px;color:var(--ink-2);text-decoration:none;transition:background .15s,color .15s;line-height:1.4}.sidebar-item:hover{background:var(--paper-2);color:var(--ink)}.sidebar-item.active{background:var(--acc-dim);color:var(--acc-deep);font-weight:600}.sidebar-item .si-icon{display:none}.sidebar-item.sub{padding-left:34px;font-size:16px;color:var(--grey-md)}.sidebar-item.sub.active{color:var(--acc-deep);background:var(--acc-dim)}.lang-toggle{position:absolute;top:48px;right:56px;z-index:200;padding:7px 16px;border-radius:999px;background:var(--ink);color:var(--white);border:none;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-decoration:none;cursor:pointer;transition:background .15s}.lang-toggle:hover{background:var(--acc-deep)}.sidebar-toggle{display:none;position:fixed;top:16px;left:16px;z-index:200;width:40px;height:40px;border-radius:8px;background:var(--ink);color:var(--white);border:none;font-size:18px;cursor:pointer;align-items:center;justify-content:center}.main{margin-left:var(--sidebar-w);flex:1;min-width:0}.main-inner{position:relative;max-width:860px;margin:0 auto;padding:48px 56px 80px}.doc-hero{margin-bottom:48px}.doc-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--acc-deep);margin-bottom:16px;display:flex;align-items:center;gap:12px}.doc-eyebrow::before{content:"";width:32px;height:2px;background:var(--acc)}.doc-eyebrow .cat-tag{display:inline-block;padding:2px 10px;border-radius:4px;background:var(--acc-dim);color:var(--acc-deep);font-size:10px;letter-spacing:.12em}.doc-title{font-size:clamp(28px,4vw,42px);font-weight:900;line-height:1.25;letter-spacing:-.02em;color:var(--ink);margin-bottom:16px}.doc-subtitle{font-size:17px;color:var(--grey-md);line-height:1.7;max-width:640px}.doc-meta{display:flex;gap:20px;flex-wrap:wrap;margin-top:24px;padding-top:20px;border-top:1px solid var(--grey-lt);font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--grey)}.doc-meta span{display:flex;align-items:center;gap:6px}.sec{margin-bottom:56px;scroll-margin-top:24px}.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:20px}.sec-num{font-family:var(--mono);font-size:clamp(22px,2.8vw,28px);font-weight:700;color:var(--acc);letter-spacing:.08em;min-width:32px}.sec-title{font-size:clamp(22px,2.8vw,28px);font-weight:800;line-height:1.3;letter-spacing:-.01em;color:var(--ink)}.sec-lead{font-size:16px;color:var(--grey-md);line-height:1.8;margin-bottom:20px}.sec p{margin-bottom:16px;color:var(--ink-2);font-size:15px;line-height:1.85}.sec strong{color:var(--ink);font-weight:700}.hl{background:var(--acc);color:var(--ink);padding:0 .15em;border-radius:2px;font-weight:600}.pull{font-weight:800;font-size:clamp(18px,2.2vw,22px);line-height:1.6;border-left:4px solid var(--acc);padding:8px 0 8px 24px;margin:28px 0;color:var(--ink)}.cards{display:grid;gap:16px;margin:24px 0}.cards-2{grid-template-columns:repeat(2,1fr)}.cards-3{grid-template-columns:repeat(3,1fr)}.cards-4{grid-template-columns:repeat(4,1fr)}.card{background:var(--white);border:1px solid var(--grey-lt);border-radius:12px;padding:24px;transition:box-shadow .2s,border-color .2s}.card:hover{border-color:var(--acc);box-shadow:0 4px 20px rgba(182,137,255,.12)}.card-icon{width:40px;height:40px;border-radius:10px;background:var(--acc-dim);color:var(--acc-deep);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px}.card h4{font-size:15px;font-weight:700;margin-bottom:8px;color:var(--ink)}.card p{font-size:13.5px;color:var(--grey-md);line-height:1.7;margin:0}.feat-card{background:var(--white);border:1px solid var(--grey-lt);border-radius:12px;padding:28px;position:relative;overflow:hidden}.feat-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--acc)}.feat-card .fc-num{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--acc-deep);margin-bottom:10px}.feat-card h4{font-size:17px;font-weight:700;margin-bottom:10px}.feat-card p{font-size:14px;color:var(--grey-md);line-height:1.7}.feat-card ul{margin:12px 0 0;padding:0;list-style:none}.feat-card ul li{font-size:13.5px;color:var(--grey-md);padding:4px 0;padding-left:18px;position:relative;line-height:1.6}.feat-card ul li::before{content:"";position:absolute;left:0;top:12px;width:6px;height:6px;border-radius:50%;background:var(--acc)}.acc-band{background:var(--acc-soft);border-radius:16px;padding:clamp(28px,4vw,48px);margin:32px 0}.acc-band .sec-title{color:var(--ink)}.stats-row{display:grid;gap:16px;margin:28px 0}.stats-4{grid-template-columns:repeat(4,1fr)}.stats-3{grid-template-columns:repeat(3,1fr)}.stat{text-align:center;padding:24px 16px;background:var(--white);border:1px solid var(--grey-lt);border-radius:12px}.stat .num{font-size:clamp(28px,3.5vw,42px);font-weight:900;color:var(--acc-deep);line-height:1;font-variant-numeric:tabular-nums}.stat .label{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--grey);margin-top:8px}.table-wrap{overflow-x:auto;margin:24px 0}table{width:100%;border-collapse:collapse;font-size:14px}th{text-align:left;padding:12px 16px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--grey);border-bottom:2px solid var(--ink);text-transform:uppercase}td{padding:14px 16px;border-bottom:1px solid var(--grey-lt);color:var(--ink-2)}tr:hover td{background:var(--paper-2)}.steps{margin:28px 0;position:relative}.step{display:flex;gap:20px;margin-bottom:24px;position:relative}.step:last-child{margin-bottom:0}.step-marker{width:36px;height:36px;flex:none;border-radius:50%;background:var(--acc);color:var(--ink);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-weight:700;font-size:14px}.step-body h4{font-size:15px;font-weight:700;margin-bottom:6px}.step-body p{font-size:14px;color:var(--grey-md);margin:0;line-height:1.7}.doc-footer{margin-top:48px;padding-top:24px;border-top:1px solid var(--grey-lt);font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--grey);line-height:1.8}.toc{background:var(--white);border:1px solid var(--grey-lt);border-radius:12px;padding:20px 24px;margin:28px 0}.toc-title{font-family:var(--title);font-size:10px;letter-spacing:.18em;color:var(--grey);text-transform:uppercase;margin-bottom:12px}.toc-list{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:6px}.toc-list a{color:var(--ink-2);text-decoration:none;font-size:13.5px;padding:4px 0;display:flex;gap:8px}.toc-list a:hover{color:var(--acc-deep)}.toc-list a .tn{font-family:var(--mono);font-size:11px;color:var(--acc);min-width:20px}@media(max-width:900px){.sidebar{transform:translateX(-100%);transition:transform .25s;box-shadow:4px 0 24px rgba(0,0,0,.15)}.sidebar.open{transform:translateX(0)}.sidebar-toggle{display:flex}.main{margin-left:0}.main-inner{padding:32px 20px 60px}.lang-toggle{top:32px;right:20px}.cards-2,.cards-3,.cards-4{grid-template-columns:1fr}.stats-4,.stats-3{grid-template-columns:repeat(2,1fr)}.toc-list{grid-template-columns:1fr}}@media(max-width:560px){.stats-4,.stats-3{grid-template-columns:1fr}}@media print{.sidebar,.sidebar-toggle{display:none!important}.main{margin-left:0}.main-inner{max-width:100%;padding:0}.sec{break-inside:avoid}.card,.feat-card,.stat,.acc-band{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="page-wrap">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <a class="sidebar-logo" href="index.html?sharecode=LYEO55FTEU">Eibee 资源中心</a>
+    <div class="sidebar-group">
+  <div class="sidebar-group-title">资源</div>
+  <a class="sidebar-item" href="index.html?sharecode=LYEO55FTEU"><span class="si-icon">›</span>Eibee 概览</a>
+</div><div class="sidebar-group">
+  <div class="sidebar-group-title">洞察</div>
+  <a class="sidebar-item" href="methodology.html?sharecode=LYEO55FTEU"><span class="si-icon">›</span>AI 红人营销方法论</a><a class="sidebar-item" href="8-mistakes.html?sharecode=LYEO55FTEU"><span class="si-icon">›</span>筛错红人 8 原因</a>
+</div><div class="sidebar-group">
+  <div class="sidebar-group-title">产品与平台产出</div>
+  <a class="sidebar-item active" href="fund-escrow.html?sharecode=LYEO55FTEU"><span class="si-icon">›</span>资金托管与平台保障</a><a class="sidebar-item" href="ai-expert.html?sharecode=LYEO55FTEU"><span class="si-icon">›</span>AI 红人营销专家</a><a class="sidebar-item" href="llm-matching.html?sharecode=LYEO55FTEU"><span class="si-icon">›</span>大模型红人匹配</a>
+</div>
+  </div>
+</aside>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<main class="main"><div class="main-inner">
+<div class="doc-hero">
+  <div class="doc-eyebrow"><span class="cat-tag">V04</span> 技术</div>
+  <h1 class="doc-title">资金托管与平台保障</h1>
+  <p class="doc-subtitle">资金托管、跨境支付与透明化交付——重新定义红人营销的信任标准。</p>
+  <div class="doc-meta"><span>9 年行业积累</span><span>500+ 品牌验证</span><span>10000+ 项目沉淀</span></div>
+</div>
+<div class="toc"><div class="toc-title">本页目录</div><div class="toc-list"><a href="#s1"><span class="tn">01</span>信任鸿沟</a><a href="#s2"><span class="tn">02</span>为什么过去解决不了</a><a href="#s3"><span class="tn">03</span>四大保障机制</a><a href="#s4"><span class="tn">04</span>平台治理</a><a href="#s5"><span class="tn">05</span>数据验证</a></div></div>
+
+<section class="sec" id="s1">
+  <div class="sec-head"><span class="sec-num">01</span><h2 class="sec-title">红人营销的信任鸿沟</h2></div>
+  <p>与超过 500 家品牌的深度沟通中，以下五类痛点被反复提及：</p>
+  <div class="cards cards-3">
+    <div class="card"><div class="card-icon">💸</div><h4>收钱不交货</h4><p>预付款到账后失联、拖稿、内容迟迟不发布，品牌追款无门</p></div>
+    <div class="card"><div class="card-icon">📉</div><h4>交付质量不可控</h4><p>内容偏离 brief、制作粗糙、品牌调性不符，验收扯皮不断</p></div>
+    <div class="card"><div class="card-icon">🌐</div><h4>跨境付款难</h4><p>多币种结算、跨境合规、汇率损耗、付款周期长且不透明</p></div>
+    <div class="card"><div class="card-icon">🎭</div><h4>数据造假</h4><p>刷量、买粉、虚假互动，品牌为虚假曝光买单，真实 ROI 无从核算</p></div>
+    <div class="card"><div class="card-icon">🔀</div><h4>追责困难</h4><p>品牌、代理商、红人多方协作，责任边界模糊，出问题互相推诿</p></div>
+  </div>
+</section>
+
+<section class="sec" id="s2">
+  <div class="sec-head"><span class="sec-num">02</span><h2 class="sec-title">为什么过去解决不了？</h2></div>
+  <div class="cards cards-3">
+    <div class="feat-card"><div class="fc-num">缺位 01</div><h4>资金安全机制缺位</h4><p>传统模式下品牌直接向红人付款，资金一旦流出便失去控制权。没有中间托管、没有节点释放、没有验收挂钩。</p></div>
+    <div class="feat-card"><div class="fc-num">缺位 02</div><h4>过程透明度缺位</h4><p>品牌往往只能在项目结束后看到一份报告，过程中的沟通、修改、发布节奏、数据表现全是黑箱。</p></div>
+    <div class="feat-card"><div class="fc-num">缺位 03</div><h4>风险前置能力缺位</h4><p>掉粉、内容违规、KPI 不达标等风险往往事后才发现，缺乏实时监测和提前预警机制。</p></div>
+  </div>
+</section>
+
+<section class="sec" id="s3">
+  <div class="sec-head"><span class="sec-num">03</span><h2 class="sec-title">四大保障机制</h2></div>
+
+  <div class="feat-card" style="margin-bottom:20px">
+    <div class="fc-num">机制一 · FUND ESCROW</div>
+    <h4>资金托管——让每一分预算按交付节点释放</h4>
+    <p>品牌预算进入 Eibee 平台托管账户，而非直接支付给红人。资金按预设交付节点分批释放：</p>
+    <div class="steps" style="margin-top:16px">
+      <div class="step"><div class="step-marker">1</div><div class="step-body"><h4>任务确认节点</h4><p>红人接受邀约并确认任务要求后，释放部分资金作为合作启动保障</p></div></div>
+      <div class="step"><div class="step-marker">2</div><div class="step-body"><h4>内容交付节点</h4><p>红人提交内容初稿并通过品牌审核后，释放下一阶段资金</p></div></div>
+      <div class="step"><div class="step-marker">3</div><div class="step-body"><h4>发布验收节点</h4><p>内容按要求发布且数据表现达到约定标准后，释放剩余资金</p></div></div>
+    </div>
+    <p style="margin-top:12px">如果红人未按约交付，品牌有权拒绝资金释放，平台依据规则仲裁处理。</p>
+  </div>
+
+  <div class="feat-card" style="margin-bottom:20px">
+    <div class="fc-num">机制二 · CROSS-BORDER PAYMENT</div>
+    <h4>跨境支付——全球红人付款，一站式合规结算</h4>
+    <ul>
+      <li>多币种支持：根据红人所在地区选择对应币种支付，减少汇兑损耗</li>
+      <li>跨区域直达：资金从平台托管账户直达红人收款账户</li>
+      <li>付款状态可追踪：每笔付款进度、状态、到账时间实时可查</li>
+      <li>套餐订单与发票管理：企业财务流程规范化、可审计</li>
+      <li>企业邮箱配置：确保资金通知和账单信息安全送达</li>
+    </ul>
+  </div>
+
+  <div class="feat-card" style="margin-bottom:20px">
+    <div class="fc-num">机制三 · TRANSPARENT DELIVERY</div>
+    <h4>透明化交付——从黑箱操作到全程可视化</h4>
+    <p>全链路——活动创建、任务分配、红人邀约、内容审核、发布追踪——全部搬到同一工作台：</p>
+    <div class="cards cards-3" style="margin-top:12px">
+      <div class="card"><h4>活动进度看板</h4><p>整体状态、任务完成率、红人参与情况一目了然</p></div>
+      <div class="card"><h4>红人参与透明</h4><p>已邀约、已确认、已提交、已发布，状态实时更新</p></div>
+      <div class="card"><h4>内容交付流程</h4><p>初稿→审核→修改→终稿→发布，每个环节有记录</p></div>
+      <div class="card"><h4>数据表现追踪</h4><p>播放量、互动率、转化数据自动回流</p></div>
+      <div class="card"><h4>KPI 达成可视化</h4><p>预设目标与实际数据对比呈现</p></div>
+    </div>
+  </div>
+
+  <div class="feat-card">
+    <div class="fc-num">机制四 · RISK ALERTS</div>
+    <h4>风险预警中心——提前发现问题，而非事后买单</h4>
+    <div class="cards cards-3" style="margin-top:12px">
+      <div class="card"><h4>红人异常监测</h4><p>掉粉异常、数据异动、负面舆情实时告警</p></div>
+      <div class="card"><h4>内容异常监测</h4><p>违规风险、调性跑偏、品牌安全提前拦截</p></div>
+      <div class="card"><h4>KPI 风险预测</h4><p>预测达成概率，低于阈值提前预警</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s4">
+  <div class="sec-head"><span class="sec-num">04</span><h2 class="sec-title">平台治理：权责清晰</h2></div>
+  <p>Eibee 将红人营销拆解为"活动→任务→邀约→内容审核→发布追踪"的标准化链路，每个环节都有明确的责任方和交付标准。</p>
+  <div class="acc-band">
+    <h4 style="margin-bottom:8px">服务商代管机制：授权不等于失控</h4>
+    <p style="margin:0;font-size:14px">服务商负责日常运营执行，品牌方拥有完整可视化权限——可查看进度、红人列表、数据和风险预警，但不可直接修改代管活动，确保服务商执行自主权，同时品牌保留知情权和监督权。</p>
+  </div>
+  <p>AI 智能体贯穿全流程辅助效率提升，但关键决策——验收标准、资金释放、风险处置——始终由品牌方掌控。<strong>AI 是助手，不是决策者。</strong></p>
+</section>
+
+<section class="sec" id="s5">
+  <div class="sec-head"><span class="sec-num" style="color:var(--acc)">05</span><h2 class="sec-title">用数据验证确定性</h2></div>
+  <div class="stats-row stats-4">
+    <div class="stat"><div class="num">500+</div><div class="label">服务品牌</div></div>
+    <div class="stat"><div class="num">30+</div><div class="label">覆盖国家</div></div>
+    <div class="stat"><div class="num">10000+</div><div class="label">执行项目</div></div>
+    <div class="stat"><div class="num">2.5×</div><div class="label">平均 ROI</div></div>
+  </div>
+  <p style="text-align:center;margin-top:20px;font-size:13px;opacity:.6">这些数字不是营销话术，而是四大保障机制在数万个真实项目中反复验证、持续迭代的结果。</p>
+</section>
+
+<div class="doc-footer">
+  Eibee 蜂智境 Agent OS · 资源中心 · 本内容由 AI 辅助生成
+</div>
+</div></main>
+</div>
+<script>
+document.getElementById('sidebarToggle').addEventListener('click',function(){
+  document.getElementById('sidebar').classList.toggle('open');
+});
+document.addEventListener('click',function(e){
+  if(!e.target.closest('.sidebar')&&!e.target.closest('.sidebar-toggle')){
+    document.getElementById('sidebar').classList.remove('open');
+  }
+});
+</script>
+<a class="lang-toggle" href="fund-escrow-en.html?sharecode=LYEO55FTEU">EN</a></body>
+</html>

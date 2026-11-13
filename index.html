@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eibee 蜂智境 Agent OS · Eibee 资源中心</title>
+<style>
+:root{--ink:#0f0f10;--ink-2:#1a1a1c;--ink-3:#26262a;--paper:#fafaf9;--paper-2:#f2f1ef;--white:#ffffff;--acc:#B689FF;--acc-dim:rgba(182,137,255,.14);--acc-soft:#F3E1FF;--acc-deep:#6b3fa0;--grey:#8a8d8a;--grey-lt:#d4d3d1;--grey-md:rgba(26,28,27,.55);--ember:#d14424;--title:'Alibaba PuHuiTi Medium','Alibaba PuHuiTi 3.0 65 Medium','PingFang SC','Microsoft YaHei',sans-serif;--mono:'Alibaba PuHuiTi','Alibaba PuHuiTi 3.0 55 Regular','PingFang SC','Microsoft YaHei',sans-serif;--sans:'Alibaba PuHuiTi','Alibaba PuHuiTi 3.0 55 Regular','PingFang SC','Microsoft YaHei',sans-serif;--sidebar-w:280px}*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}body{font-family:var(--sans);background:var(--paper);color:var(--ink);line-height:1.7;font-size:15px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}h1,h2,h3,h4,h5,h6,.sidebar-logo,.sidebar-group-title,.toc-title{font-family:var(--title)}::selection{background:var(--acc);color:var(--ink)}.page-wrap{display:flex;min-height:100vh}.sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);background:var(--white);border-right:1px solid var(--grey-lt);padding:36px 0;position:fixed;top:0;left:0;bottom:0;overflow-y:auto;z-index:100}.sidebar-inner{padding:0 24px}.sidebar-logo{display:flex;align-items:center;gap:10px;font-family:var(--title);font-size:20px;font-weight:700;letter-spacing:.06em;color:var(--ink);text-decoration:none;margin-bottom:36px}.sidebar-group{margin-bottom:28px}.sidebar-group-title{font-family:var(--title);font-size:12px;letter-spacing:.18em;color:var(--grey);text-transform:uppercase;padding:0 12px;margin-bottom:8px}.sidebar-item{display:flex;align-items:center;gap:10px;padding:8px 12px;border-radius:8px;font-size:16px;color:var(--ink-2);text-decoration:none;transition:background .15s,color .15s;line-height:1.4}.sidebar-item:hover{background:var(--paper-2);color:var(--ink)}.sidebar-item.active{background:var(--acc-dim);color:var(--acc-deep);font-weight:600}.sidebar-item .si-icon{display:none}.sidebar-item.sub{padding-left:34px;font-size:16px;color:var(--grey-md)}.sidebar-item.sub.active{color:var(--acc-deep);background:var(--acc-dim)}.lang-toggle{position:absolute;top:48px;right:56px;z-index:200;padding:7px 16px;border-radius:999px;background:var(--ink);color:var(--white);border:none;font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-decoration:none;cursor:pointer;transition:background .15s}.lang-toggle:hover{background:var(--acc-deep)}.sidebar-toggle{display:none;position:fixed;top:16px;left:16px;z-index:200;width:40px;height:40px;border-radius:8px;background:var(--ink);color:var(--white);border:none;font-size:18px;cursor:pointer;align-items:center;justify-content:center}.main{margin-left:var(--sidebar-w);flex:1;min-width:0}.main-inner{position:relative;max-width:860px;margin:0 auto;padding:48px 56px 80px}.doc-hero{margin-bottom:48px}.doc-eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--acc-deep);margin-bottom:16px;display:flex;align-items:center;gap:12px}.doc-eyebrow::before{content:"";width:32px;height:2px;background:var(--acc)}.doc-eyebrow .cat-tag{display:inline-block;padding:2px 10px;border-radius:4px;background:var(--acc-dim);color:var(--acc-deep);font-size:10px;letter-spacing:.12em}.doc-title{font-size:clamp(28px,4vw,42px);font-weight:900;line-height:1.25;letter-spacing:-.02em;color:var(--ink);margin-bottom:16px}.doc-subtitle{font-size:17px;color:var(--grey-md);line-height:1.7;max-width:640px}.doc-meta{display:flex;gap:20px;flex-wrap:wrap;margin-top:24px;padding-top:20px;border-top:1px solid var(--grey-lt);font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--grey)}.doc-meta span{display:flex;align-items:center;gap:6px}.sec{margin-bottom:56px;scroll-margin-top:24px}.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:20px}.sec-num{font-family:var(--mono);font-size:clamp(22px,2.8vw,28px);font-weight:700;color:var(--acc);letter-spacing:.08em;min-width:32px}.sec-title{font-size:clamp(22px,2.8vw,28px);font-weight:800;line-height:1.3;letter-spacing:-.01em;color:var(--ink)}.sec-lead{font-size:16px;color:var(--grey-md);line-height:1.8;margin-bottom:20px}.sec p{margin-bottom:16px;color:var(--ink-2);font-size:15px;line-height:1.85}.sec strong{color:var(--ink);font-weight:700}.hl{background:var(--acc);color:var(--ink);padding:0 .15em;border-radius:2px;font-weight:600}.pull{font-weight:800;font-size:clamp(18px,2.2vw,22px);line-height:1.6;border-left:4px solid var(--acc);padding:8px 0 8px 24px;margin:28px 0;color:var(--ink)}.cards{display:grid;gap:16px;margin:24px 0}.cards-2{grid-template-columns:repeat(2,1fr)}.cards-3{grid-template-columns:repeat(3,1fr)}.cards-4{grid-template-columns:repeat(4,1fr)}.card{background:var(--white);border:1px solid var(--grey-lt);border-radius:12px;padding:24px;transition:box-shadow .2s,border-color .2s}.card:hover{border-color:var(--acc);box-shadow:0 4px 20px rgba(182,137,255,.12)}.card-icon{width:40px;height:40px;border-radius:10px;background:var(--acc-dim);color:var(--acc-deep);display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px}.card h4{font-size:15px;font-weight:700;margin-bottom:8px;color:var(--ink)}.card p{font-size:13.5px;color:var(--grey-md);line-height:1.7;margin:0}.feat-card{background:var(--white);border:1px solid var(--grey-lt);border-radius:12px;padding:28px;position:relative;overflow:hidden}.feat-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--acc)}.feat-card .fc-num{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--acc-deep);margin-bottom:10px}.feat-card h4{font-size:17px;font-weight:700;margin-bottom:10px}.feat-card p{font-size:14px;color:var(--grey-md);line-height:1.7}.feat-card ul{margin:12px 0 0;padding:0;list-style:none}.feat-card ul li{font-size:13.5px;color:var(--grey-md);padding:4px 0;padding-left:18px;position:relative;line-height:1.6}.feat-card ul li::before{content:"";position:absolute;left:0;top:12px;width:6px;height:6px;border-radius:50%;background:var(--acc)}.acc-band{background:var(--acc-soft);border-radius:16px;padding:clamp(28px,4vw,48px);margin:32px 0}.acc-band .sec-title{color:var(--ink)}.stats-row{display:grid;gap:16px;margin:28px 0}.stats-4{grid-template-columns:repeat(4,1fr)}.stats-3{grid-template-columns:repeat(3,1fr)}.stat{text-align:center;padding:24px 16px;background:var(--white);border:1px solid var(--grey-lt);border-radius:12px}.stat .num{font-size:clamp(28px,3.5vw,42px);font-weight:900;color:var(--acc-deep);line-height:1;font-variant-numeric:tabular-nums}.stat .label{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--grey);margin-top:8px}.table-wrap{overflow-x:auto;margin:24px 0}table{width:100%;border-collapse:collapse;font-size:14px}th{text-align:left;padding:12px 16px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--grey);border-bottom:2px solid var(--ink);text-transform:uppercase}td{padding:14px 16px;border-bottom:1px solid var(--grey-lt);color:var(--ink-2)}tr:hover td{background:var(--paper-2)}.steps{margin:28px 0;position:relative}.step{display:flex;gap:20px;margin-bottom:24px;position:relative}.step:last-child{margin-bottom:0}.step-marker{width:36px;height:36px;flex:none;border-radius:50%;background:var(--acc);color:var(--ink);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-weight:700;font-size:14px}.step-body h4{font-size:15px;font-weight:700;margin-bottom:6px}.step-body p{font-size:14px;color:var(--grey-md);margin:0;line-height:1.7}.doc-footer{margin-top:48px;padding-top:24px;border-top:1px solid var(--grey-lt);font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--grey);line-height:1.8}.toc{background:var(--white);border:1px solid var(--grey-lt);border-radius:12px;padding:20px 24px;margin:28px 0}.toc-title{font-family:var(--title);font-size:10px;letter-spacing:.18em;color:var(--grey);text-transform:uppercase;margin-bottom:12px}.toc-list{list-style:none;display:grid;grid-template-columns:repeat(2,1fr);gap:6px}.toc-list a{color:var(--ink-2);text-decoration:none;font-size:13.5px;padding:4px 0;display:flex;gap:8px}.toc-list a:hover{color:var(--acc-deep)}.toc-list a .tn{font-family:var(--mono);font-size:11px;color:var(--acc);min-width:20px}@media(max-width:900px){.sidebar{transform:translateX(-100%);transition:transform .25s;box-shadow:4px 0 24px rgba(0,0,0,.15)}.sidebar.open{transform:translateX(0)}.sidebar-toggle{display:flex}.main{margin-left:0}.main-inner{padding:32px 20px 60px}.lang-toggle{top:32px;right:20px}.cards-2,.cards-3,.cards-4{grid-template-columns:1fr}.stats-4,.stats-3{grid-template-columns:repeat(2,1fr)}.toc-list{grid-template-columns:1fr}}@media(max-width:560px){.stats-4,.stats-3{grid-template-columns:1fr}}@media print{.sidebar,.sidebar-toggle{display:none!important}.main{margin-left:0}.main-inner{max-width:100%;padding:0}.sec{break-inside:avoid}.card,.feat-card,.stat,.acc-band{break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="page-wrap">
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-inner">
+    <a class="sidebar-logo" href="index.html?sharecode=LYEO55FTEU">Eibee 资源中心</a>
+    <div class="sidebar-group">
+  <div class="sidebar-group-title">资源</div>
+  <a class="sidebar-item active" href="index.html?sharecode=LYEO55FTEU"><span class="si-icon">›</span>Eibee 概览</a>
+</div><div class="sidebar-group">
+  <div class="sidebar-group-title">洞察</div>
+  <a class="sidebar-item" href="methodology.html?sharecode=LYEO55FTEU"><span class="si-icon">›</span>AI 红人营销方法论</a><a class="sidebar-item" href="8-mistakes.html?sharecode=LYEO55FTEU"><span class="si-icon">›</span>筛错红人 8 原因</a>
+</div><div class="sidebar-group">
+  <div class="sidebar-group-title">产品与平台产出</div>
+  <a class="sidebar-item" href="fund-escrow.html?sharecode=LYEO55FTEU"><span class="si-icon">›</span>资金托管与平台保障</a><a class="sidebar-item" href="ai-expert.html?sharecode=LYEO55FTEU"><span class="si-icon">›</span>AI 红人营销专家</a><a class="sidebar-item" href="llm-matching.html?sharecode=LYEO55FTEU"><span class="si-icon">›</span>大模型红人匹配</a>
+</div>
+  </div>
+</aside>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<main class="main"><div class="main-inner">
+<div class="doc-hero">
+  <div class="doc-eyebrow"><span class="cat-tag">V01</span> 概览</div>
+  <h1 class="doc-title">Eibee 蜂智境 Agent OS</h1>
+  <p class="doc-subtitle">出海红人营销的智能操作系统——从洞察到落地的全链路 AI 驱动，让每一个出海营销决策都精准、高效、可控。</p>
+  <div class="doc-meta"><span>9 年行业积累</span><span>500+ 品牌验证</span><span>10000+ 项目沉淀</span></div>
+</div>
+<div class="toc"><div class="toc-title">本页目录</div><div class="toc-list"><a href="#s1"><span class="tn">01</span>Eibee 是什么</a><a href="#s2"><span class="tn">02</span>核心能力地图</a><a href="#s3"><span class="tn">03</span>AI 智能体协同</a><a href="#s4"><span class="tn">04</span>为什么选择 Eibee</a><a href="#s5"><span class="tn">05</span>平台数据</a><a href="#s6"><span class="tn">06</span>适合谁用</a></div></div>
+
+<section class="sec" id="s1">
+  <div class="sec-head"><span class="sec-num">01</span><h2 class="sec-title">Eibee 是什么</h2></div>
+  <p>Eibee 蜂智境 Agent OS 是一套面向全球化品牌出海的 <strong>AI 红人营销智能工作台</strong>。它把过去需要一个完整营销团队（策略、红人、内容、数据、风控）才能完成的工作，沉淀为一套由 AI Agent 协同驱动的系统——从市场洞察、策略生成、红人匹配、任务执行，到数据追踪、风险预警与效果复盘，<span class="hl">全链路一站式闭环</span>。</p>
+  <p>我们用 9 年红人营销行业积累，训练 AI 理解"品牌—创作者—内容—受众"之间的真实关系，让出海增长从"靠经验、碰运气"，走向可计算、可复制、可归因的确定性。</p>
+  <div class="pull">一句话定位：Eibee 是你的 AI 红人营销团队，7×24 小时在线，从第一句需求到最后一份复盘全程协同。</div>
+</section>
+
+<section class="sec" id="s2">
+  <div class="sec-head"><span class="sec-num">02</span><h2 class="sec-title">核心能力地图</h2></div>
+  <p>Eibee 由<strong>四大 AI 引擎</strong>构成，覆盖红人营销全生命周期，每个环节都有 AI 实时赋能：</p>
+  <div class="cards cards-2">
+    <div class="feat-card">
+      <div class="fc-num">ENGINE 01</div>
+      <h4>AI 策略引擎</h4>
+      <p>品牌档案自动初始化，10 大模块流式生成营销策略报告，支持自然语言输入，数分钟内产出可执行方案。</p>
+      <ul>
+        <li>市场机会、人群洞察、平台选择</li>
+        <li>内容方向、红人组合、预算分配</li>
+        <li>节奏排期、KPI 设定、风险预案</li>
+      </ul>
+    </div>
+    <div class="feat-card">
+      <div class="fc-num">ENGINE 02</div>
+      <h4>智能红人匹配</h4>
+      <p>AI 语义搜索 + 多维画像评分，自动识别数据虚高、粉丝错位、品牌安全等隐性问题。</p>
+      <ul>
+        <li>一句话描述需求，语义召回对的人</li>
+        <li>粉丝质量、互动率、内容垂直度综合评估</li>
+        <li>风险红人合作前自动标记</li>
+      </ul>
+    </div>
+    <div class="feat-card">
+      <div class="fc-num">ENGINE 03</div>
+      <h4>任务全链路管理</h4>
+      <p>活动创建→邀约→沟通→审核→发布追踪，一套系统跑通。AI 个性化邀约，多方协同透明。</p>
+      <ul>
+        <li>Smart Outreach 高回复率邀约</li>
+        <li>品牌、代理商、红人同一工作台</li>
+        <li>进度透明、责任清晰</li>
+      </ul>
+    </div>
+    <div class="feat-card">
+      <div class="fc-num">ENGINE 04</div>
+      <h4>风险预警中心</h4>
+      <p>红人异常、内容异常、KPI 达成风险实时告警，配合资金托管保护每一笔预算安全。</p>
+      <ul>
+        <li>掉粉、数据异动、负面舆情告警</li>
+        <li>违规、跑偏、品牌安全自动识别</li>
+        <li>KPI 不达标提前预警</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="s3">
+  <div class="sec-head"><span class="sec-num">03</span><h2 class="sec-title">AI 智能体协同，贯穿营销全链路</h2></div>
+  <p>Eibee 不只是一组功能的堆叠，更在每个营销环节内置了对应的 AI 专业能力。当你推进项目时，AI 会根据当前任务自动切换"角色视角"：</p>
+  <div class="cards cards-4">
+    <div class="card"><div class="card-icon">🎯</div><h4>策略视角</h4><p>市场洞察、策略生成、预算与节奏规划</p></div>
+    <div class="card"><div class="card-icon">👤</div><h4>红人视角</h4><p>红人搜索、智能匹配、邀约与关系维护</p></div>
+    <div class="card"><div class="card-icon">✏️</div><h4>内容视角</h4><p>内容方向建议、Brief 生成、创意思路</p></div>
+    <div class="card"><div class="card-icon">📊</div><h4>数据视角</h4><p>实时追踪、效果归因、复盘报告</p></div>
+  </div>
+  <p>你只需要下达目标，Eibee 的 AI 能力会在各环节自动衔接、协同运转，把原本需要多角色配合的工作，压缩到一个工作台里完成。</p>
+</section>
+
+<section class="sec" id="s4">
+  <div class="sec-head"><span class="sec-num">04</span><h2 class="sec-title">为什么选择 Eibee</h2></div>
+  <div class="cards cards-3">
+    <div class="card"><div class="card-icon">🌍</div><h4>全球化能力</h4><p>覆盖 30+ 国家与地区，多语言、多平台生态（YouTube、TikTok、Instagram 等）</p></div>
+    <div class="card"><div class="card-icon">🔄</div><h4>全链路闭环</h4><p>从策略到归因，一套系统协同，告别工具拼凑和数据割裂</p></div>
+    <div class="card"><div class="card-icon">⚡</div><h4>AI 实时赋能</h4><p>智能搜索、策略生成、风险预警贯穿全流程，而非单点功能</p></div>
+    <div class="card"><div class="card-icon">🔒</div><h4>数据可信</h4><p>多维指标与可追溯的效果数据，帮助团队做出确定决策</p></div>
+    <div class="card"><div class="card-icon">💰</div><h4>资金与交付保障</h4><p>资金托管、跨境支付与透明化交付标准，品牌预算安全可控</p></div>
+  </div>
+</section>
+
+<section class="sec" id="s5">
+  <div class="sec-head"><span class="sec-num" style="color:var(--acc)">05</span><h2 class="sec-title">平台数据</h2></div>
+  <div class="stats-row stats-4">
+    <div class="stat"><div class="num">500+</div><div class="label">全球品牌</div></div>
+    <div class="stat"><div class="num">30+</div><div class="label">国家与地区</div></div>
+    <div class="stat"><div class="num">10000+</div><div class="label">营销项目</div></div>
+    <div class="stat"><div class="num">2.5×</div><div class="label">平均 ROI 提升</div></div>
+  </div>
+</section>
+
+<section class="sec" id="s6">
+  <div class="sec-head"><span class="sec-num">06</span><h2 class="sec-title">适合谁用</h2></div>
+  <div class="cards cards-3">
+    <div class="card"><h4>DTC / 出海品牌</h4><p>想用红人营销打开海外市场，但缺少成熟团队与方法论</p></div>
+    <div class="card"><h4>跨境电商卖家</h4><p>需要在 TikTok、YouTube 等平台快速、批量、可控地铺量种草</p></div>
+    <div class="card"><h4>AI 硬件 / APP</h4><p>产品需要内容教育市场，红人测评与场景化内容是核心增长杠杆</p></div>
+    <div class="card"><h4>营销代理商 / MCN</h4><p>希望用 AI 提效，同时管理多个品牌客户与红人资源</p></div>
+    <div class="card"><h4>首次试水出海品牌</h4><p>需要一套"开箱即用"的策略与执行体系，降低试错成本</p></div>
+  </div>
+</section>
+
+<div class="doc-footer">
+  Eibee 蜂智境 Agent OS · 资源中心 · 本内容由 AI 辅助生成
+</div>
+</div></main>
+</div>
+<script>
+document.getElementById('sidebarToggle').addEventListener('click',function(){
+  document.getElementById('sidebar').classList.toggle('open');
+});
+document.addEventListener('click',function(e){
+  if(!e.target.closest('.sidebar')&&!e.target.closest('.sidebar-toggle')){
+    document.getElementById('sidebar').classList.remove('open');
+  }
+});
+</script>
+<a class="lang-toggle" href="index-en.html?sharecode=LYEO55FTEU">EN</a></body>
+</html>
