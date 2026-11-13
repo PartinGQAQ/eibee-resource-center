@@ -105,10 +105,10 @@ h1,h2,h3,h4,h5,h6,
 }
 .sidebar-item.sub{padding-left:34px;font-size:16px;color:var(--ink-3)}
 .sidebar-item.sub.active{color:var(--link);background:var(--primary-soft)}
-/* language toggle */
+/* language toggle — anchored inside hero card top-right */
 .lang-toggle{
-  position:absolute;top:48px;right:56px;z-index:200;
-  padding:7px 16px;border-radius:999px;
+  position:absolute;top:22px;right:22px;z-index:5;
+  padding:6px 15px;border-radius:999px;
   background:var(--panel);color:var(--link);
   border:1px solid var(--line-strong);
   font-family:var(--mono);font-size:12px;letter-spacing:.1em;
@@ -413,7 +413,7 @@ tr:hover td{background:var(--paper-2)}
   .sidebar-toggle{display:flex}
   .main{margin-left:0}
   .main-inner{padding:32px 20px 60px}
-  .lang-toggle{top:32px;right:20px}
+  .lang-toggle{top:14px;right:14px}
   .doc-hero{padding:26px 22px 24px}
   .cards-2,.cards-3,.cards-4{grid-template-columns:1fr}
   .stats-4,.stats-3{grid-template-columns:repeat(2,1fr)}
