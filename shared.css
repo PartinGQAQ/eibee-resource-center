@@ -134,6 +134,11 @@ h1,h2,h3,h4,h5,h6,
 .main{
   margin-left:var(--sidebar-w);
   flex:1;min-width:0;
+  background:
+    radial-gradient(1100px 480px at 88% -80px,rgba(91,124,244,.11),transparent 62%),
+    radial-gradient(900px 460px at -80px 26%,rgba(124,79,232,.075),transparent 60%),
+    radial-gradient(1000px 520px at 105% 62%,rgba(91,124,244,.06),transparent 58%),
+    linear-gradient(170deg,#f3f7ff 0%,#f6f6ff 45%,#f5f3ff 100%);
 }
 .main-inner{
   position:relative;
